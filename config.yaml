@@ -1,0 +1,19 @@
+server:
+  port: "8080"
+
+mysql:
+  dsn: "root:root@tcp(mysql:3306)/taskservice?parseTime=true"
+  max_open_conn: 25
+  max_idle_conn: 10
+
+redis:
+  addr: "redis:6379"
+  password: ""
+  db: 0
+
+jwt:
+  secret: "dev-secret-change-me"
+  ttl_min: 60
+
+rate_limit:
+  requests_per_minute: 100
